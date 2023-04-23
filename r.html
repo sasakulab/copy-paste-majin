@@ -22,21 +22,13 @@
     </div>
     <div class="mb-3">
       <label for="copypaste" class="form-label">テキスト</label>
-      <textarea class="form-control" id="copypastetext" rows="5"></textarea>
+      <textarea class="form-control" id="copypastetext" rows="5" disabled></textarea>
     </div>
-    <div class="g-3">
-      <button class="custom-btn w-100" onclick="generateLink()">コピペリンクを生成する</button>
+    <div class="mb-3">
+      <button class="custom-btn w-100" onclick="copyText('copypastetext');">コピペする</button>
     </div>
-    <hr>
-    <div class="input-group mb-3">
-      <span class="input-group-text">HTML Anchor</span>
-      <input type="text" class="form-control" id="anchor" disabled>
-      <button class="custom-btn" onclick="copyText('anchor');">Copy</span>
-    </div>
-    <div class="input-group mb-3">
-      <span class="input-group-text">URL</span>
-      <input type="text" class="form-control" id="url" disabled>
-      <button class="custom-btn" onclick="copyText('url');">Copy</span>
+    <div class="mb-3">
+      <button href="" class="custom-btn w-100" id="tweet" onclick="tweetText()">ツイートする</a>
     </div>
   </main>
 </body>
