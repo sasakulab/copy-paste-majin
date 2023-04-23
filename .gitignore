@@ -70,5 +70,4 @@ typings/
 .next
 
 #
-script/**/*.js*
 package-lock.json

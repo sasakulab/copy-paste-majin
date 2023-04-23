@@ -12,7 +12,8 @@ function getParam() {
 }
 
 function tweetText() {
-  window.location.href = `https://twitter.com/intent/tweet?text=${getParam()}`
+  const t = getParam()
+  window.location.href = `https://twitter.com/intent/tweet?text=${getParam()}&url=https://c.sasakulab.com/r.html?t=${t}&hashtags=コピペ魔神`
 }
 
 function getText() {
@@ -23,8 +24,9 @@ function getText() {
 
 function generateLink() {
   t = getText()
-  document.getElementById("url").value = "https://c.sasakulab.com/r.html?t=" + t
-  document.getElementById("anchor").value = `<a href="https://c.sasakulab.com/r.html?t=${t}">Copy</a>`
+  urlRaw = encodeURI("https://c.sasakulab.com/r.html?t=" + t)
+  document.getElementById("url").value = urlRaw
+  document.getElementById("anchor").value = `<a href="${urlRaw}">Copy</a>`
 }
 
 function copyText(id) {
