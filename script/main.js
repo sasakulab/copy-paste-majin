@@ -13,7 +13,7 @@ function getParam() {
 
 function tweetText() {
   const t = getParam()
-  window.location.href = `https://twitter.com/intent/tweet?text=${getParam()}&url=https://c.sasakulab.com/r.html?t=${t}&hashtags=コピペ魔神`
+  window.location.href = `https://twitter.com/intent/tweet?text=${getParam()}&url=https://c.sasakulab.com/r.html?t=${t}`
 }
 
 function getText() {
